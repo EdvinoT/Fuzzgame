@@ -2,10 +2,8 @@ num_list = list(range(1,101))
 for x in num_list:
     if x%3 == 0:
         print("Fizz")
-    elif 5%x ==0:
+    elif x%5 ==0:
         print('Buzz')
-    else:
-        3%x and 5%x
+    elif x%3 and x%5:
         print("FizzBuzz")
-
-print(num_list)
+    print(x)
