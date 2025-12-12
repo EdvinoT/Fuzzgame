@@ -1,9 +1,11 @@
 num_list = list(range(1,101))
 for x in num_list:
-    if x%3 == 0:
-        print("Fizz")
+    if x%3 and x%5:
+        print("FizzBuzz", x)
     elif x%5 ==0:
-        print('Buzz')
-    elif x%3 and x%5:
-        print("FizzBuzz")
-    print(x)
+            print('Buzz',x)
+    elif x%3 == 0:
+            print("Fizz",x)
+    else:
+        print(x)
+        
